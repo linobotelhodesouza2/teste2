@@ -17,6 +17,9 @@
       padding: 20px;
       text-align: center;
     }
+    header img {
+      max-width: 200px;
+    }
     nav {
       background-color: #f2f2f2;
       padding: 10px;
@@ -39,6 +42,12 @@
       background-color: #f2f2f2;
       padding: 20px;
       margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .event-info img {
+      max-width: 300px;
+      margin-right: 20px;
     }
     .event-info h3 {
       margin-top: 0;
@@ -47,6 +56,12 @@
       border-bottom: 1px solid #ccc;
       padding-bottom: 10px;
       margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .news-item img {
+      max-width: 150px;
+      margin-right: 20px;
     }
     .news-item:last-child {
       border-bottom: none;
@@ -61,7 +76,7 @@
 </head>
 <body>
   <header>
-    <h1>BGS - Brasil Game Show</h1>
+    <img src="https://via.placeholder.com/200x100" alt="BGS - Brasil Game Show">
   </header>
   <nav>
     <a href="#">Home</a>
@@ -74,21 +89,33 @@
     <h2>Bem-vindo à BGS</h2>
     <p>A Brasil Game Show é a maior feira de games da América Latina. Aqui você encontra os melhores lançamentos, eventos, palestras e muito mais!</p>
     <div class="event-info">
-      <h3>Próxima Edição</h3>
-      <p>A próxima edição da BGS acontecerá de 10 a 13 de outubro de 2024 no São Paulo Expo.</p>
+      <img src="https://via.placeholder.com/300x200" alt="Próxima Edição">
+      <div>
+        <h3>Próxima Edição</h3>
+        <p>A próxima edição da BGS acontecerá de 10 a 13 de outubro de 2024 no São Paulo Expo.</p>
+      </div>
     </div>
     <h2>Notícias</h2>
     <div class="news-item">
-      <h3>Novo jogo da série Zelda será lançado na BGS 2024</h3>
-      <p>A Nintendo anunciou que o próximo título da aclamada série Zelda será lançado durante a Brasil Game Show 2024.</p>
+      <img src="https://via.placeholder.com/150x100" alt="Novo jogo da série Zelda">
+      <div>
+        <h3>Novo jogo da série Zelda será lançado na BGS 2024</h3>
+        <p>A Nintendo anunciou que o próximo título da aclamada série Zelda será lançado durante a Brasil Game Show 2024.</p>
+      </div>
     </div>
     <div class="news-item">
-      <h3>Expositor XYZ anuncia novidades exclusivas para a feira</h3>
-      <p>O expositor XYZ prometeu trazer novidades exclusivas e demonstrações especiais para os visitantes da BGS 2024.</p>
+      <img src="https://via.placeholder.com/150x100" alt="Expositor XYZ">
+      <div>
+        <h3>Expositor XYZ anuncia novidades exclusivas para a feira</h3>
+        <p>O expositor XYZ prometeu trazer novidades exclusivas e demonstrações especiais para os visitantes da BGS 2024.</p>
+      </div>
     </div>
     <div class="news-item">
-      <h3>Ingressos para a BGS 2024 já estão à venda</h3>
-      <p>Os ingressos para a próxima edição da Brasil Game Show já estão disponíveis para compra online.</p>
+      <img src="https://via.placeholder.com/150x100" alt="Ingressos BGS 2024">
+      <div>
+        <h3>Ingressos para a BGS 2024 já estão à venda</h3>
+        <p>Os ingressos para a próxima edição da Brasil Game Show já estão disponíveis para compra online.</p>
+      </div>
     </div>
   </main>
   <footer>
