@@ -3,302 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetShop do Bairro - Seu Pet Feliz!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Reset e estilos gerais */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header */
-        header {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 20px 0;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            padding: 5px 10px;
-        }
-        nav ul li a:hover {
-            background-color: #45a049;
-        }
-
-        /* Hero Section */
-        .hero {
-            background-image: url('https://via.placeholder.com/1200x400');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #fff;
-        }
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 24px;
-            margin-bottom: 30px;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-        }
-        .cta-button:hover {
-            background-color: #45a049;
-        }
-
-        /* Produtos */
-        .products {
-            padding: 50px 0;
-        }
-        .products h2 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        .product-card {
-            border: 1px solid #ddd;
-            padding: 20px;
-            text-align: center;
-            border-radius: 5px;
-        }
-        .product-card img {
-            max-width: 100%;
-            height: 200px;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-        .product-card h3 {
-            margin-bottom: 10px;
-        }
-        .product-card p {
-            margin-bottom: 15px;
-        }
-        .product-card .price {
-            font-weight: bold;
-            color: #4CAF50;
-            margin-bottom: 15px;
-        }
-        .product-card button {
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            padding: 8px 15px;
-            cursor: pointer;
-            border-radius: 3px;
-        }
-        .product-card button:hover {
-            background-color: #45a049;
-        }
-
-        /* Sobre nós */
-        .about {
-            background-color: #f4f4f4;
-            padding: 50px 0;
-        }
-        .about h2 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .about p {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Contato */
-        .contact {
-            padding: 50px 0;
-        }
-        .contact h2 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .contact-info {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .contact-item {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .contact-item i {
-            font-size: 24px;
-            color: #4CAF50;
-            margin-bottom: 10px;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        /* WhatsApp Button */
-        .whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            font-weight: bold;
-        }
-        .whatsapp-button i {
-            margin-right: 10px;
-            font-size: 24px;
-        }
-    </style>
+    <title>Pet Shop do Bairro</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo">PetShop do Bairro</div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#products">Produtos</a></li>
-                    <li><a href="#about">Sobre Nós</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Pet Shop do Bairro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="container">
-                <h1>Bem-vindo ao PetShop do Bairro</h1>
-                <p>Tudo para o seu pet ficar feliz e saudável!</p>
-                <a href="#products" class="cta-button">Ver Produtos</a>
-            </div>
-        </section>
-
-        <section id="products" class="products">
-            <div class="container">
-                <h2>Nossos Produtos</h2>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <img src="https://via.placeholder.com/250x200" alt="Ração Premium">
-                        <h3>Ração Premium</h3>
-                        <p>Ração de alta qualidade para cães adultos</p>
-                        <div class="price">R$ 89,90</div>
-                        <button>Comprar</button>
-                    </div>
-                    <div class="product-card">
-                        <img src="https://via.placeholder.com/250x200" alt="Brinquedo Interativo">
-                        <h3>Brinquedo Interativo</h3>
-                        <p>Brinquedo divertido para gatos</p>
-                        <div class="price">R$ 39,90</div>
-                        <button>Comprar</button>
-                    </div>
-                    <div class="product-card">
-                        <img src="https://via.placeholder.com/250x200" alt="Coleira Ajustável">
-                        <h3>Coleira Ajustável</h3>
-                        <p>Coleira confortável para cães de todos os tamanhos</p>
-                        <div class="price">R$ 29,90</div>
-                        <button>Comprar</button>
-                    </div>
-                    <div class="product-card">
-                        <img src="https://via.placeholder.com/250x200" alt="Shampoo Hipoalergênico">
-                        <h3>Shampoo Hipoalergênico</h3>
-                        <p>Shampoo suave para pets com pele sensível</p>
-                        <div class="price">R$ 24,90</div>
-                        <button>Comprar</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <div class="container">
-                <h2>Sobre Nós</h2>
-                <p>O PetShop do Bairro é uma loja especializada em produtos para animais de estimação. Há mais de 10 anos, oferecemos uma ampla variedade de produtos de qualidade para cães, gatos e outros pets. Nossa missão é proporcionar o melhor para o seu animal de estimação, com atendimento personalizado e preços justos.</p>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Entre em Contato</h2>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Rua das Flores, 123<br>Bairro Feliz, Cidade - UF</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>(11) 1234-5678</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>contato@petshopdobairro.com</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 PetShop do Bairro. Todos os direitos reservados.</p>
+    <section id="banner">
+        <img src="https://images.unsplash.com/photo-1555685812-4b743f4b8ba9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEzfHxwZXR8ZW58MHx8fHwxNjk0NDg2OTk4&ixlib=rb-1.2.1&q=80&w=1080" alt="Banner">
+        <div class="banner-text">
+            <h2>Os melhores produtos para seu pet</h2>
         </div>
-    </footer>
+    </section>
 
-    <a href="https://wa.me/5511999999999" class="whatsapp-button" target="_blank">
-        <i class="fab fa-whatsapp"></i> Fale conosco
+    <section id="produtos-destaque">
+        <h2>Produtos em Destaque</h2>
+        <div class="produtos">
+            <div class="produto">
+                <img src="https://images.unsplash.com/photo-1592194996308-7a5b19e27ff1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHBlfHwwfHx8fDE2OTQ0ODY5OTg&ixlib=rb-1.2.1&q=80&w=1080" alt="Produto 1">
+                <p>Ração Premium</p>
+            </div>
+            <div class="produto">
+                <img src="https://images.unsplash.com/photo-1613977257366-1240bb86dd30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDV8fHBlfHwwfHx8fDE2OTQ0ODY5OTg&ixlib=rb-1.2.1&q=80&w=1080" alt="Produto 2">
+                <p>Brinquedo para Cães</p>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/SEU_NUMERO" class="whatsapp-button">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
     </a>
 
-    <!-- Jivochat Script -->
-    <script>
-    (function(){ var widget_id = 'XXXXXXXXXXXXXXXX';var d=document;var w=window;function l(){
-    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
-    s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
-    if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
