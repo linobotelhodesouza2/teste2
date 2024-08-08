@@ -4,80 +4,126 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BGS - Brasil Game Show</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     /* CSS */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
+
+    /* Cabeçalho */
     header {
       background-color: #333;
       color: #fff;
       padding: 20px;
       text-align: center;
     }
-    header img {
-      max-width: 200px;
+
+    header .logo {
+      max-width: 300px;
     }
+
+    /* Navegação */
     nav {
       background-color: #f2f2f2;
       padding: 10px;
       text-align: center;
     }
+
     nav a {
       color: #333;
       text-decoration: none;
-      padding: 10px;
+      padding: 10px 20px;
       margin: 5px;
+      transition: background-color 0.3s, color 0.3s;
     }
+
     nav a:hover {
       background-color: #333;
       color: #fff;
     }
+
+    /* Conteúdo Principal */
     main {
-      padding: 20px;
+      padding: 40px;
     }
+
     .event-info {
       background-color: #f2f2f2;
-      padding: 20px;
-      margin-bottom: 20px;
+      padding: 30px;
+      margin-bottom: 40px;
       display: flex;
       align-items: center;
     }
+
     .event-info img {
-      max-width: 300px;
-      margin-right: 20px;
+      max-width: 400px;
+      margin-right: 30px;
     }
-    .event-info h3 {
+
+    .event-info h2 {
       margin-top: 0;
     }
+
+    .news-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 30px;
+    }
+
     .news-item {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 10px;
-      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      padding: 20px;
       display: flex;
+      flex-direction: column;
       align-items: center;
     }
+
     .news-item img {
-      max-width: 150px;
-      margin-right: 20px;
+      max-width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 20px;
     }
-    .news-item:last-child {
-      border-bottom: none;
+
+    .news-item h3 {
+      margin-top: 0;
     }
+
+    /* Rodapé */
     footer {
       background-color: #333;
       color: #fff;
-      padding: 10px;
+      padding: 20px;
       text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .event-info {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .event-info img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://via.placeholder.com/200x100" alt="BGS - Brasil Game Show">
+    <img src="https://via.placeholder.com/300x100" alt="BGS - Brasil Game Show" class="logo">
   </header>
+
   <nav>
     <a href="#">Home</a>
     <a href="#">Programação</a>
@@ -85,45 +131,61 @@
     <a href="#">Expositores</a>
     <a href="#">Contato</a>
   </nav>
+
   <main>
-    <h2>Bem-vindo à BGS</h2>
-    <p>A Brasil Game Show é a maior feira de games da América Latina. Aqui você encontra os melhores lançamentos, eventos, palestras e muito mais!</p>
-    <div class="event-info">
-      <img src="https://via.placeholder.com/300x200" alt="Próxima Edição">
+    <section class="event-info">
+      <img src="https://via.placeholder.com/400x300" alt="Próxima Edição">
       <div>
-        <h3>Próxima Edição</h3>
+        <h2>Próxima Edição</h2>
         <p>A próxima edição da BGS acontecerá de 10 a 13 de outubro de 2024 no São Paulo Expo.</p>
+        <a href="#" class="btn">Saiba Mais</a>
       </div>
-    </div>
-    <h2>Notícias</h2>
-    <div class="news-item">
-      <img src="https://via.placeholder.com/150x100" alt="Novo jogo da série Zelda">
-      <div>
+    </section>
+
+    <h2>Últimas Notícias</h2>
+    <div class="news-container">
+      <div class="news-item">
+        <img src="https://via.placeholder.com/300x200" alt="Novo jogo da série Zelda">
         <h3>Novo jogo da série Zelda será lançado na BGS 2024</h3>
         <p>A Nintendo anunciou que o próximo título da aclamada série Zelda será lançado durante a Brasil Game Show 2024.</p>
+        <a href="#" class="btn">Leia Mais</a>
       </div>
-    </div>
-    <div class="news-item">
-      <img src="https://via.placeholder.com/150x100" alt="Expositor XYZ">
-      <div>
+      <div class="news-item">
+        <img src="https://via.placeholder.com/300x200" alt="Expositor XYZ">
         <h3>Expositor XYZ anuncia novidades exclusivas para a feira</h3>
         <p>O expositor XYZ prometeu trazer novidades exclusivas e demonstrações especiais para os visitantes da BGS 2024.</p>
+        <a href="#" class="btn">Leia Mais</a>
       </div>
-    </div>
-    <div class="news-item">
-      <img src="https://via.placeholder.com/150x100" alt="Ingressos BGS 2024">
-      <div>
+      <div class="news-item">
+        <img src="https://via.placeholder.com/300x200" alt="Ingressos BGS 2024">
         <h3>Ingressos para a BGS 2024 já estão à venda</h3>
         <p>Os ingressos para a próxima edição da Brasil Game Show já estão disponíveis para compra online.</p>
+        <a href="#" class="btn">Comprar Ingressos</a>
       </div>
     </div>
   </main>
+
   <footer>
     <p>&copy; 2024 BGS. Todos os direitos reservados.</p>
   </footer>
+
   <script>
     // JavaScript
     // Adicione interatividade e funcionalidades adicionais aqui
+    // Exemplo: Mostrar/Ocultar menu de navegação em dispositivos móveis
+    const navMenu = document.querySelector('nav');
+    const menuToggle = document.createElement('button');
+    menuToggle.classList.add('menu-toggle');
+    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+      menuToggle.classList.toggle('open');
+    });
+
+    navMenu.parentNode.insertBefore(menuToggle, navMenu);
+
+    // Adicione mais funcionalidades conforme necessário
   </script>
 </body>
 </html>
