@@ -10,21 +10,19 @@
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
+            margin: 0;
             padding: 0;
         }
-
         header {
             background-color: #343a40;
             color: white;
-            padding: 20px;
+            padding: 20px 0;
         }
-
         header h1 {
             margin: 0;
             font-size: 28px;
             text-align: center;
         }
-
         nav ul {
             list-style: none;
             padding: 0;
@@ -32,30 +30,25 @@
             justify-content: center;
             margin-top: 10px;
         }
-
         nav ul li {
             margin: 0 15px;
         }
-
         nav ul li a {
             color: white;
             text-decoration: none;
             font-size: 16px;
         }
-
         #banner {
             position: relative;
             text-align: center;
             color: white;
+            margin-bottom: 30px;
         }
-
         #banner img {
             width: 100%;
-            height: auto;
-            max-height: 500px;
+            height: 400px;
             object-fit: cover;
         }
-
         .banner-text {
             position: absolute;
             top: 50%;
@@ -66,11 +59,13 @@
             padding: 10px 20px;
             border-radius: 10px;
         }
-
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+        }
         .produtos {
             padding: 50px 0;
         }
-
         .produto {
             text-align: center;
             background-color: white;
@@ -79,35 +74,29 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
         }
-
         .produto img {
             max-width: 100%;
             border-radius: 10px;
             height: 200px;
             object-fit: cover;
         }
-
         .produto h3 {
             margin: 15px 0 10px 0;
         }
-
         .produto p {
             font-size: 14px;
             color: #6c757d;
         }
-
         .whatsapp-button {
             position: fixed;
             bottom: 20px;
             right: 20px;
             z-index: 1000;
         }
-
         .whatsapp-button img {
             width: 60px;
             height: 60px;
         }
-
         footer {
             background-color: #343a40;
             color: white;
@@ -115,9 +104,24 @@
             padding: 20px;
             margin-top: 30px;
         }
-
         footer p {
             margin: 0;
+        }
+        .contact-form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form label {
+            font-weight: bold;
+        }
+        .contact-form .form-group {
+            margin-bottom: 15px;
+        }
+        .contact-form .btn-primary {
+            background-color: #343a40;
+            border-color: #343a40;
         }
     </style>
 </head>
@@ -128,9 +132,9 @@
         <h1>Pet Shop - Seu Pet em Boas Mãos</h1>
         <nav>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#home" class="scroll">Início</a></li>
+                <li><a href="#produtos" class="scroll">Produtos</a></li>
+                <li><a href="#contato" class="scroll">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -142,7 +146,8 @@
     </div>
 
     <!-- Produtos Section -->
-    <section class="produtos container">
+    <section id="produtos" class="produtos container">
+        <h2 class="section-title">Nossos Produtos</h2>
         <div class="row">
             <div class="col-md-4">
                 <div class="produto">
@@ -168,10 +173,43 @@
         </div>
     </section>
 
+    <!-- Contato Section -->
+    <section id="contato" class="container">
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <h3>Envie-nos uma Mensagem</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Nosso Endereço</h3>
+                <p>Rua Exemplo, 123 - Bairro, Cidade - Estado</p>
+                <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                <p><i class="fas fa-envelope"></i> contato@petshop.com</p>
+            </div>
+        </div>
+    </section>
+
     <!-- WhatsApp Button -->
     <div class="whatsapp-button">
-        <a href="https://wa.me/5531999999999" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        <a href="https://wa.me/5511912345678" target="_blank">
+            <img src="https://images.unsplash.com/photo-1600878394632-fd90d079a7f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdoYXRzYXB8fHx8fDE2OTg0MTY5NTY&ixlib=rb-1.2.1&q=80&w=1080" alt="WhatsApp">
         </a>
     </div>
 
@@ -180,8 +218,20 @@
         <p>&copy; 2024 Pet Shop. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a.scroll').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
